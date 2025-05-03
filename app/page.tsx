@@ -31,7 +31,7 @@ export default function Home() {
 
     try {
       setLoading(true);
-      const res = await axios.post('http://51.20.65.133:5000/predict', formData);
+      const res = await axios.post('http://3.129.250.245:5000/predict', formData);
       setResult(res.data.prediction);
     } catch (error) {
       setResult('Error: ' + (error instanceof Error ? error.message : 'An unknown error occurred'));
@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-5">
       <div className="bg-white rounded-xl shadow-lg p-10 w-full max-w-md text-center">
-        <h1 className="text-3xl font-bold text-gray-800 mb-8">Cat or Dog Classifier</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-8">උ or ඉ Classifier</h1>
         
         <div className="mb-5">
           <label className="inline-block px-6 py-3 bg-gray-200 text-gray-700 rounded-md cursor-pointer transition duration-300 hover:bg-gray-300">
